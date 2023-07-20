@@ -7,9 +7,15 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "createDevDatabase": "supabase init && supabase start",
+    "db:start": "supabase start",
+    "db:stop": "supabase stop",
+    "db:status": "supabase status"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "supabase": "^1.77.9"
+  },
   "dependencies": {
     "@strapi/plugin-i18n": "4.11.5",
     "@strapi/plugin-users-permissions": "4.11.5",
